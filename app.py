@@ -1,7 +1,8 @@
-import urllib3
+from selenium import webdriver
+import time
 
-http = urllib3.PoolManager()
-url = "https://busquedas.gruporeforma.com/reforma/BusquedasComs.aspx"
-r = http.request('GET', url)
-print(r.data)
+driver = webdriver.Firefox(executable_path='/mnt/c/Users/Pablo/Projects/ws-history-news/geckodriver.exe')
+driver.get("http://selenium.dev")
+time.sleep(15)
 
+driver.quit()
