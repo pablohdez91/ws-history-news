@@ -13,7 +13,7 @@ fecha_fin = '01-06-2020'
 url = 'https://busquedas.gruporeforma.com/{}/BusquedasComs.aspx'.format(periodico)
 base = 'https://busquedas.gruporeforma.com/{}/'.format(periodico)
 
-driver = webdriver.Firefox(executable_path='/mnt/c/Users/Pablo/Projects/ws-history-news/geckodriver.exe')
+driver = webdriver.Firefox(executable_path='./geckodriver.exe')
 driver.get(url)
 
 # Insert search parameters in the page
@@ -64,7 +64,7 @@ print(titulos)
 print(links)
 
 
-driver.quit()
+# driver.quit()
 
 
 #driver.quit()
